@@ -40,12 +40,18 @@ For **development**:
 With an api key that has GPT4 access run:
 
 - `export OPENAI_API_KEY=[your api key]`
+for people who can not use export, try:
+- `set OPENAI_API_KEY=[your api key]`
+
 
 
 **Run**:
 
 - Create an empty folder. If inside the repo, you can run:
   - `cp -r projects/example/ projects/my-new-project`
+for people unable to use cp in Windows, try:
+  - `xcopy /E projects\example projects\my-new-project`
+
 - Fill in the `prompt` file in your new folder
 - `gpt-engineer projects/my-new-project`
   - (Note, `gpt-engineer --help` lets you see all available options. For example `--steps use_feedback` lets you improve/fix code in a project)
